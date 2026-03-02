@@ -1,0 +1,4 @@
+<properties>
+    <property id="nightscoutUrl" type="string"></property>
+    <property id="nightscoutToken" type="string"></property>
+</properties>

@@ -1,0 +1,16 @@
+<settings>
+    <setting 
+        propertyKey="@Properties.nightscoutUrl" 
+        title="Nightscout URL" 
+        prompt="Enter your Nightscout URL"
+    >
+        <settingConfig type="alphaNumeric" />
+    </setting>
+    <setting 
+        propertyKey="@Properties.nightscoutToken" 
+        title="Nightscout Token" 
+        prompt="Enter your Nightscout Token"
+    >
+        <settingConfig type="alphaNumeric" />
+    </setting>
+</settings>
