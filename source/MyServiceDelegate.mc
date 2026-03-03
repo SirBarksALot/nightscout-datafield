@@ -4,6 +4,8 @@ using Toybox.Communications;
 using Toybox.System;
 import Toybox.Lang;
 
+const dataPointsAmount = 12;
+
 class MyServiceDelegate extends System.ServiceDelegate {
     var nightscoutUrl;
     var nightscoutToken;
@@ -26,7 +28,7 @@ class MyServiceDelegate extends System.ServiceDelegate {
     }
 
     function requestPhoneData() {
-        var url = nightscoutUrl + "/api/v1/entries/sgv.json?count=5&token=" + nightscoutToken;
+        var url = nightscoutUrl + "/api/v1/entries/sgv.json?count=" + dataPointsAmount + "&token=" + nightscoutToken;
         var responseCallback = method(:onReceive); 
 
         Communications.makeWebRequest(
